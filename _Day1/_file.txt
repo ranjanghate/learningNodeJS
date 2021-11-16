@@ -1,0 +1,1 @@
+This file is created by Nodejs. Appending text to the file.txt

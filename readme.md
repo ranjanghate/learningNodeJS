@@ -24,3 +24,11 @@
 * callback, callback abstraction and callback chaining
 * ES6 object properties
 * Sending request without npm
+
+## Day3
+
+* intro to express
+* serving up HTML and JSON
+* serving static assets(html, css and Javascript)
+* serving dynamic assets(handle bars)
+* 404 error

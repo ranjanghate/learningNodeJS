@@ -32,3 +32,8 @@
 * serving static assets(html, css and Javascript)
 * serving dynamic assets(handle bars)
 * 404 error
+
+## Application2
+
+  Develop a weather application using express, dynamic webpages and geocode, weatherAPI.
+  Link <https://lit-earth-24172.herokuapp.com/>

@@ -37,3 +37,14 @@
 
   Develop a weather application using express, dynamic webpages and geocode, weatherAPI.
   Link <https://lit-earth-24172.herokuapp.com/>
+
+## Day 4
+
+* intro to MongoDB
+* connecting to and inserting in mongodb
+* Object ID in mongoDB
+* querying documents
+* promises in javascript
+* updating and deleting documents
+* intro to mongoose
+* data validation and sanitization using mongoose

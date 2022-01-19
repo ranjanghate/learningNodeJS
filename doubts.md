@@ -14,3 +14,5 @@
 * **How to start MongoDB server on different IP address?**
 
 * **Does default values go through validation in Mongoose? (Yes It does)**
+
+* **How does REST API store state?**

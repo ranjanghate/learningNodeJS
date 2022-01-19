@@ -48,3 +48,14 @@
 * updating and deleting documents
 * intro to mongoose
 * data validation and sanitization using mongoose
+
+## Day 5
+
+* intro to Rest API
+* post request endpoints to create document
+* get request endpoints to list all document or to list particular document(route params)
+* promise chaining
+* Async Await
+* Update resource endpoints
+* Deleting resource endpoints
+* Seperating routes

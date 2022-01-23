@@ -16,3 +16,8 @@
 * **Does default values go through validation in Mongoose? (Yes It does)**
 
 * **How does REST API store state?**
+
+* **Secret Key use in JWT sign?**
+
+* **Why not to use arrow function as member function of Object?**
+**Arrow functions do not bind their own this, instead, they inherit the one from the parent scope, which is called "lexical scoping"**

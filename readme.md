@@ -59,3 +59,14 @@
 * Update resource endpoints
 * Deleting resource endpoints
 * Seperating routes
+
+## Day 6
+
+* Bcrypt, Hashing and Middleware
+* User Login
+* JSON Web Token
+* MiddleWare
+* User login, logout through JWT
+* Serialising Mongose Model object (toJSON)
+* Building One to Many relationship
+* Cascading associations delete

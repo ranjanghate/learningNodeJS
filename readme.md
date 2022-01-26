@@ -83,3 +83,8 @@
 * Auto Croping the Image
 * Email Sending using sendgrid
 * Environment Variables
+
+## Application 3
+
+* Created a REST API for task-manager application where user can signup and create the tasks
+Link :- <https://task-manager-ranjan.herokuapp.com/>

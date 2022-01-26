@@ -21,3 +21,6 @@
 
 * **Why not to use arrow function as member function of Object?**
 **Arrow functions do not bind their own this, instead, they inherit the one from the parent scope, which is called "lexical scoping"**
+
+* **Why Not to use file system to store files?**
+**Because file system gets erased when we re-deploy over application**

@@ -70,3 +70,16 @@
 * Serialising Mongose Model object (toJSON)
 * Building One to Many relationship
 * Cascading associations delete
+
+## Day 7
+
+* Adding timestamp in mongoose model
+* Sorting, Paginating and filtering data
+* File uploads
+* Validation on file upload
+* Handling Express Errors
+* Adding Image to Mongo DB document
+* Serving the Image
+* Auto Croping the Image
+* Email Sending using sendgrid
+* Environment Variables

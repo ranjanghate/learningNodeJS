@@ -1,5 +1,7 @@
 const express = require('express');
 const User = require('../model/user.js');
+const { sendWelcomeEmail, sendDeleteEmail } = require('../mailers/account.js');
+
 const router = new express.Router();
 const auth = require('../middleware/authentication_middleware.js');
 
@@ -26,6 +28,8 @@ router.post('/user', async (req, res) => {
     const user = new User(req.body);
     await user.save();
     const token = await user.generateAuthToken();
+    sendWelcomeEmail(user.email, user.name);
+
     res.status(201).send({ user, token });
   } catch (e) {
     res.status(400).send(e);
@@ -60,6 +64,7 @@ router.patch('/user/me', auth, async (req, res) => {
 router.delete('/user/me', auth, async (req, res) => {
   try {
     await req.user.remove();
+    sendDeleteEmail(req.user.email, req.user.name);
     res.status(200).send(`User ${req.user._id} Deleted`);
   } catch (e) {
     return res.status(500).send(e)

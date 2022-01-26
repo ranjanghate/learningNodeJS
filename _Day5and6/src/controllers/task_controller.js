@@ -5,10 +5,30 @@ const router = new express.Router();
 
 // Get method to list all tasks
 router.get('/tasks', auth, async (req, res) => {
-  console.log('Task list')
+  const match = {};
+  const sort = {};
+
+  if (req.query.completed) {
+    match['completed'] = req.query.completed.trim() === 'true';
+  }
+
+  if(req.query.sortBy) {
+    const parts = req.query.sortBy.split(':');
+    sort[parts[0].trim()] = parts[1].trim() === 'desc' ? -1 : 1;
+  }
+
   try {
-    const tasks = await req.user.populate('tasks');
+    // const tasks = await req.user.populate('tasks');
     // we need a populate() method to fill the field with that document.
+    const tasks = await req.user.populate( {
+      path: 'tasks',
+      match: match,
+      options: {
+        limit: req.query.limit,
+        skip: req.query.skip,
+        sort: sort
+      }
+    } );
 
     res.status(201).send(req.user.tasks);
   } catch (e) {

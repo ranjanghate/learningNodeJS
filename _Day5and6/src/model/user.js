@@ -47,7 +47,12 @@ const userSchema = new mongoose.Schema({
       type: String,
       required: true
     }
-  }]
+  }],
+  avatar: { // to store the profile image of user
+    type: Buffer // items that get saved in binary form
+  }
+}, {
+  timestamps: true
 });
 
 userSchema.statics.findByCredentials = async (email, password) => {
@@ -66,7 +71,7 @@ userSchema.statics.findByCredentials = async (email, password) => {
 }
 
 userSchema.methods.generateAuthToken = async function() {
-  const token = jsonwebtoken.sign( { _id: this._id.toString() }, 'nodeapplication');
+  const token = jsonwebtoken.sign( { _id: this._id.toString() }, process.env.JWT_SECRET);
   this.tokens = this.tokens.concat({ token });
   await this.save();
 
@@ -85,6 +90,7 @@ userSchema.methods.toJSON = function() { // overwritting the toJSON method to hi
 
   delete userObject.password;
   delete userObject.tokens;
+  delete userObject.avatar;
 
   return userObject;
 }

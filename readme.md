@@ -88,3 +88,12 @@
 
 * Created a REST API for task-manager application where user can signup and create the tasks
 Link :- <https://task-manager-ranjan.herokuapp.com/>
+
+## Day 8
+
+* Testing code with Jest
+* Testing ASYNC code
+* Testing Task Manager API (Application 3) with JEST
+* Testing endpoint with authentication
+* Mocking npm modules
+* Sending a file using supertest

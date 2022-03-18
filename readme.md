@@ -97,3 +97,20 @@ Link :- <https://task-manager-ranjan.herokuapp.com/>
 * Testing endpoint with authentication
 * Mocking npm modules
 * Sending a file using supertest
+
+## Day 9
+
+* Learning Web Socket
+* Setting up Socket.io in express
+* Transfering data through socket.io
+* Broadcasting events using socket.io
+* Share location using geolocation API
+* Event Acknowledgment
+* Rendering HTML using Mustache
+* Javascript Time
+* Socket IO rooms
+
+## Application 4
+
+* Created a web-chat application using web socket where user can chat, share location.
+Link :- <https://chat-application-ranjan.herokuapp.com/>
